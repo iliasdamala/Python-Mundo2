@@ -1,0 +1,14 @@
+num = int(input('digite um numero inteiro: '))
+print('''escolhe umas das bases de conversao:
+[1] converter para BINARIO 
+[2] converter para OCTAl
+[3] converter para HEXADECIMAL''')
+opcao = int(input('sua opcao: ')
+if opcao = 1:
+   print('{} convertido em BINARIO é igual {}.format(num, bin(num)))
+elif opcao = 2:
+  print('{} convertido em OCTAL é igual {}. format(num, oct(num)))
+elfi opcao = 3:
+  print('{} convertido em HEXADECIMAL é igual {}. format(num, hex(num)))
+else :
+  print(ópcao invalida! tente novamente')
