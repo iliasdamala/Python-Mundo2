@@ -1,0 +1,14 @@
+casa = float(input('qual o valor da casa?: R$'))
+salario= float(input('qual seu salario?: R$'))
+anos= float(input('quer pagar em quantos anos?'))
+x =  anos*12
+prestacao= casa / x
+minimo = salario*30/100
+print('para pagar uma casa de R${:.2f} em {}anos'.format(casa,anos),end='')
+print('a prestacao sera de R$ {}'.format(prestacao))
+if prestacao <= minimo :
+    print('emprestimo pode ser concedido!')
+    print('va ate uma agencia para continuar o processo')
+else:
+    print('emprestimo negado!')
+    print('infelizmente voce nao pode financiar essa casa')
