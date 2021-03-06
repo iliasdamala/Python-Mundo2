@@ -13,3 +13,25 @@ elif (idade >19 and idade <= 20):
     print('classificacao SENIOR')
 elif (idade > 20):
     print('classificacao MASTER')
+    
+    
+    
+    
+PODE FAZER ASSIM TAMBEM DA NO MESMO
+
+
+from datetime import date
+ano = int(input('Voce nasceu em qual ano?:'))
+hoje = date.today().year
+idade = hoje - ano
+print('o altela tem {} anos'.format(idade))
+if idade <= 9:
+    print('classificacao MIRIM')
+elif  idade <=14:
+    print('classificacao INFANTIL')
+elif  idade <=19:
+    print('classificacao JUNIOR')
+elif  idade <= 20:
+    print('classificacao SENIOR')
+elif idade > 20:
+    print('classificacao MASTER')
