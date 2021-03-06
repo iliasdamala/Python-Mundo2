@@ -1,0 +1,38 @@
+Funcionando:
+
+from datetime import date
+ano = (int(input('inserir o ano de nascimento:')))
+#(int(input('Qual a idade de recrutamento no seu pais?:')))
+hoje = date.today().year
+idade = hoje - ano
+if idade < 18:
+    print('ainda vai se alistar daqui a {} anos'.format(18-idade))
+elif idade > 18:
+    print('Ja passou do tempo! se passaram {} anos'.format(idade-18))
+elif idade == 18:
+    print('Esta na hora de se alistar!')
+
+
+
+
+
+Apresentou erro no primeiro if (normalmente funciona):
+
+from datetime import date
+nascimento = (int(input('inserir o ano de nascimento:')))
+#(int(input('Qual a idade de recrutamento no seu pais?:')))
+hoje = date.today().year
+idade = hoje - nacimento
+print('quem nasceu em {} tem {} anos em {}'.format(nascimento, idade, hoje)
+if idade < 18:
+    saldo = 18 - idade
+    print('ainda vai se alistar daqui a {} anos'.format(saldo))
+    ano = hoje + saldo
+    print('voce deve se alistatar em {}'.format(ano)
+elif idade > 18:
+    saldo = idade - 18
+    print('Ja passou do tempo! se passaram {} anos'.format(saldo))
+    ano = hoje - saldo 
+    print('voce deveria ter se alisatado em {}'.format(ano)
+elif idade == 18:
+    print('Esta na hora de se alistar!')
