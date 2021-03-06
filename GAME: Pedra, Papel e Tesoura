@@ -1,0 +1,51 @@
+#fazendo o jogo jo-ken-po(pedra,papel,tesoura)
+import time
+from random import randint
+print('=-'*10)
+print('[0] PEDRA')
+print('[1] PAPEL')
+print('[2] TESOURA')
+print('=-'*10)
+itens=('Pedra','Papel','Tesoura')
+computador = randint(0,2)
+jogador = int(input('escolhe sua opçaõ: '))
+print('=-'*10)
+print('Jô')
+time.sleep(1)
+print('KEN')
+time.sleep(1)
+print('Pô!')
+print('=-'*10)
+print('Voce escolheu: {}'.format(itens[jogador]))
+print('computador escolheu: {}'.format(itens[computador]))
+print('=-'*10)
+if computador == 0: #PEDRA
+    if jogador == 0:
+        print('Empate tente de novo!')
+    elif jogador == 1:
+        print('Parabens, voce ganhou!')
+    elif jogador == 2 :
+        print('Você Perdeu Vacilão!')
+        else:
+        print('JOGADA INVALIDA!')
+elif computador == 1:#PAPEL
+    if jogador == 0:
+        print('Você Perdeu Vacilão!')
+    elif jogador == 1:
+        print('Empate, tente de novo!!')
+    elif jogador == 2:
+        print('Parabens, voce ganhou!')
+        else:
+        print('JOGADA INVALIDA!')
+elif computador == 2: #TESOURA
+    if jogador == 0:
+        print('Parabens, voce ganhou!')
+    elif jogador == 1:
+        print('Você Perdeu Vacilão!!!')
+    elif jogador == 2:
+        print('EMPATE! tente de novo!')
+    else:
+        print('JOGADA INVALIDA!')
+
+
+
