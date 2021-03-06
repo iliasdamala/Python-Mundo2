@@ -4,6 +4,5 @@ if valor1 > valor2:
     print('o primeiro valor é maior')
 elif valor1 < valor2:
     print('o segundo valor é maior')
-elif valor1 == valor2:
+else:
     print('os valores sao iguais')
-print('END')
