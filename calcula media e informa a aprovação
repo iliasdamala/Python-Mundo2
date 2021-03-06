@@ -1,0 +1,10 @@
+nota1 = float(input('insira sua primeira nota:'))
+nota2 = float(input('insira sua segunda nota:'))
+media = (nota1+nota2)/2
+if media > 7.0 or media == 7.0 :
+    print('APROVADO!Sua media é {}'.format(media))
+elif media <= 5.0 :
+    print('REPROVADO!Sua media é {}'.format(media))
+elif media >= 5.0 or media<= 6.9:
+    print('RECUPERAÇAO!Sua media é {}'.format(media))
+print('***END***')
