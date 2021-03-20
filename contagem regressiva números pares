@@ -1,0 +1,10 @@
+for n in range(1,51):
+   if n % 2 == 0:
+    print(n)
+print('Acabou')
+    #pode usar esse metodo para colocar na horizontal [ print(n,end=' ') ]
+    #para imprimir apenas os numeros pares usar: [ if n%2==0]
+
+    #para diminuir o numero d lacos pode fazer :
+    #for n in range(2,51,2):
+    #print(n) ou print(n,end=' ') para aparecer na horizontal
