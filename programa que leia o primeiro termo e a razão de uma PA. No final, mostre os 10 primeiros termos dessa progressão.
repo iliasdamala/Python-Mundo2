@@ -1,0 +1,6 @@
+Primeiro = int(input('Primeiro termo:'))
+Razao= int(input('insira a razao:'))
+decimo= Primeiro + (10-1)* Razao
+for n in range (Primeiro,decimo+Razao,Razao):
+   print('{}'.format(n),end=' -> ')
+print('Acabou')
