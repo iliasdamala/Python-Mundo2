@@ -1,0 +1,21 @@
+total = totmil = cont = menor =  0
+barato = ' '
+while True:
+    produto = str(input('DIGITE O NOME DO PRODUTO:'))
+    preco = float(input('DIGITE O PRECO DO PRODUTO: R$'))
+    total += preco
+    cont += 1
+    if preco > 1000:
+        totmil += 1
+    if cont == 1 or preco < menor:
+        menor = preco
+        barato = produto
+    resp = ' '
+    while resp not in 'SN':
+        resp = str(input('QUER CONTINUAR? [S/N]: ')).strip().upper()[0]
+    if resp == 'N':
+        break
+print(f' A compra total deu R${total:.2f} ')
+print(f'{totmil} produtos custam mais de R$1000')
+print(f'O nome do produto mais barato foi {barato} e custa {menor:.2f}')
+
