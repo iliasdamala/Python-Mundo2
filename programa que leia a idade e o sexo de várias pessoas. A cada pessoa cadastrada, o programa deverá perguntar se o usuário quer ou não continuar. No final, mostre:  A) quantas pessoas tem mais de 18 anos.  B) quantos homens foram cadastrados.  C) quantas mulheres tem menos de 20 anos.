@@ -1,0 +1,24 @@
+tot18 = homens = Mulherescommenosdevinte = 0
+while True:
+    idade = int(input('Digite sua idade:'))
+    sexo = ' '
+    while sexo not in 'MFmf':
+        sexo = str(input('Digite seu sexo[M/F]:')).strip().upper()[0]
+        if idade >= 18:
+            tot18 += 1
+        if sexo == 'M':
+            homens += 1
+        if sexo == 'F' and idade < 20:
+            Mulherescommenosdevinte += 1
+    res = ' '
+    while res not in 'S/N':
+        res = str(input('Quer continuar? [S/N]: ')).strip().upper()[0]
+    if res == 'N':
+        break
+print(f' {tot18} pessoas tem mais de 18 anos!')
+print(f' {homens} homens foram cadastrasos!')
+print(f' {Mulherescommenosdevinte} mulhers tem menos de 20 anos!')
+
+
+
+
