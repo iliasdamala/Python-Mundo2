@@ -1,0 +1,18 @@
+valore = (int(input('Digite um numero: ')),
+         int(input('Digite outro numero: ')),
+         int(input('Digite mais um numero: ')),
+         int(input('Digite o ultimo numero: ')))
+print(f'voce digitou os numeros {valore}')
+print(f'o numero 9 apareceu {valore.count(9)} vezes')
+if 3 in valore:
+   print(f'o numero 3 foi digitado na posicao {valore.index(3)+1}')
+else:
+    print('o numero 3 nao foi degitado em nenhuma posicao')
+print(f'os numeros pares digitados foram:', end='')
+for n in valore:
+    if n % 2 == 0:
+        print(n, end=' ')
+
+
+
+
